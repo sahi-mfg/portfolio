@@ -4,65 +4,75 @@ import Icon from "./Icon.astro";
 
 <section class="box skills">
   <div class="stack gap-2 lg:gap-4">
+    <Icon icon="code" color="var(--accent-regular)" size="4rem" gradient />
+    <h2>Python, SQL, Git, Docker</h2>
+    <p>
+      J'ai une bonne connaissance de Python et SQL. J'ai aussi travaillé avec
+      Git et Docker pour gérer mes projets.
+    </p>
+  </div>
+
+  <div class="stack gap-2 lg:gap-4">
     <Icon
       icon="terminal-window"
       color="var(--accent-regular)"
-      size="4em"
+      size="4rem"
       gradient
     />
-    <h2>Data Engineering & Data Science</h2>
+    <h2>Linux & Terminal</h2>
     <p>
-      Je suis passionné par la data et par l'impact qu'elle peut avoir pour
-      resoudre des problèmes.
+      Je suis à l'aise avec Linux et le terminal. J'utilise des commandes
+      régulièrement pour gérer mes projets et mes serveurs.
     </p>
   </div>
+
   <div class="stack gap-2 lg:gap-4">
-    <Icon icon="trophy" color="var(--accent-regular)" size="4rem" gradient />
-    <h2>Pandas, Pyspark, FastAPI, cloud GCP</h2>
+    <Icon icon="code" color="var(--accent-regular)" size="4rem" gradient />
+    <h2>Mathématiques Appliquées</h2>
     <p>
-      J'ai travaillé avec plusieurs librairies et frameworks Python pour la data
-      science et l'ingénierie. Et je ne compte pas m'arrêter là.
+      J'ai une formation en mathématiques appliquées et en statistiques qui
+      m'aide à comprendre les concepts de Machine Learning et de Deep Learning.
     </p>
   </div>
-</section>
 
-<style>
-  .box {
-    border: 1px solid var(--gray-800);
-    border-radius: 0.75rem;
-    padding: 1.5rem;
-    background-color: var(--gray-999_40);
-    box-shadow: var(--shadow-sm);
-  }
-
-  .skills {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-  }
-
-  .skills h2 {
-    font-size: var(--text-lg);
-  }
-
-  .skills p {
-    color: var(--gray-400);
-  }
-
-  @media (min-width: 50em) {
+  <style>
     .box {
-      border-radius: 1.5rem;
-      padding: 2.5rem;
+      border: 1px solid var(--gray-800);
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+      background-color: var(--gray-999_40);
+      box-shadow: var(--shadow-sm);
     }
 
     .skills {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
     }
 
     .skills h2 {
-      font-size: var(--text-2xl);
+      font-size: var(--text-lg);
     }
-  }
-</style>
+
+    .skills p {
+      color: var(--gray-400);
+    }
+
+    @media (min-width: 50em) {
+      .box {
+        border-radius: 1.5rem;
+        padding: 2.5rem;
+      }
+
+      .skills {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5rem;
+      }
+
+      .skills h2 {
+        font-size: var(--text-2xl);
+      }
+    }
+  </style>
+</section>

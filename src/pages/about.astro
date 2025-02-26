@@ -1,129 +1,159 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from "../layouts/BaseLayout.astro";
 
-import ContactCTA from '../components/ContactCTA.astro';
-import Hero from '../components/Hero.astro';
+import ContactCTA from "../components/ContactCTA.astro";
+import Hero from "../components/Hero.astro";
 ---
 
-<BaseLayout title="About | Sahi Mohamed Francis" description="About Sahi Mohamed Francis Mon parcours">
-	<div class="stack gap-20">
-		<main class="wrapper about">
-			<Hero
-				title="About"
-				tagline="Merci de votre visite. Lisez ci-dessous pour en savoir plus sur moi et mon parcours."
-			>
-				<img
-					width="1553"
-					height="873"
-					src="/assets/at-work.jpg"
-					alt="Jeanine White at work with a colleague"
-				/>
-			</Hero>
+<BaseLayout
+  title="About | Sahi Mohamed Francis"
+  description="About Sahi Mohamed Francis Mon parcours"
+>
+  <div class="stack gap-20">
+    <main class="wrapper about">
+      <Hero
+        title="About"
+        tagline="Merci de votre visite. Lisez ci-dessous pour en savoir plus sur moi et mon parcours."
+      >
+        <img
+          width="1553"
+          height="873"
+          src="/assets/at-work.jpg"
+          alt="Sahi at work with a colleague"
+        />
+      </Hero>
 
-			<section>
-				<h2 class="section-title">Background</h2>
-				<div class="content">
-					<p>
-						Je suis un ingénieur en mathématiques appliquées et modélisation, diplômé de Polytech'Nice-Sophia.
-						Je suis passionné par l'informatique et les mathématiques.
+      <section>
+        <h2 class="section-title">Background</h2>
+        <div class="content">
+          <p>
+            Je suis un ingénieur en mathématiques appliquées et modélisation,
+            diplômé de Polytech'Nice-Sophia. Je suis passionné par
+            l'informatique et les mathématiques.
+          </p>
+          <p>
+            J'ai travaillé pendant 1 an en tant que Data scientist dans une
+            startup française MyDataModels (qui malheuresement a fermé ses
+            portes) à Sophia Antipolis. J'intervenais sur des problèmes
+            d'analyse de données et développement de modèles prédictifs pour les
+            clients de la startup. J'ai également travaillé sur des projets de
+            recherche pour l'amélioration d'un algorithme de machine learning
+            créé par la startup.
+          </p>
+          <p>
+            Actuellement, je suis à la recherche de nouvelles opportunités dans
+            la data (en France ou à l'étranger) en tant que Data Scientist, Data
+            Engineer ou Data Analyst. Et je continue à travailler sur des
+            projets personnels pour améliorer mes compétences.
+          </p>
+          <p>
+            Je suis également un fervent supporter du <a
+              href="https://www.fcbarcelona.fr"
+              target="_blank">FC Barcelone</a
+            >.
+          </p>
+        </div>
+      </section>
+      <section>
+        <h2 class="section-title">Education</h2>
+        <div class="content">
+          <p>
+            Diplôme d'ingénieur en Mathématiques Appliquées et Modélisation de
+            Polytech'Nice-Sophia.
+          </p>
+        </div>
+      </section>
+      <section>
+        <h2 class="section-title">Skills</h2>
+        <div class="content">
+          <p><strong>Programmation</strong>: Python, SQL</p>
+          <p>
+            <strong>Analyse de données</strong>: Pandas, Polars, Numpy, Scipy,
+            Matplotlib, Seaborn, Plotly.
+          </p>
+          <p><strong>Data Engineering</strong>: Spark.</p>
+          <p><strong>Data Visualisation</strong>: Tableau.</p>
+          <p>
+            <strong>Machine Learning & Deep Learning</strong>: Scikit-learn,
+            Tensorflow, Pytorch.
+          </p>
+          <p><strong>Cloud Computing</strong>: GCP.</p>
+          <p><strong>Langues</strong>: Français, Anglais.</p>
+          <p>
+            <strong>Outils</strong>: Git, Docker, Gitlab CI/CD, Github Actions,
+            Linux, VSCode, PyCharm.
+          </p>
+          <p>
+            <strong>Maths</strong>: Algèbre linéaire, Analyse, Probabilités,
+            Statistiques, Optimisation, Calcul différentiel et intégral.
+          </p>
+          <p><strong>Soft Skills</strong>: Curiosité, Autonomie, Rigueur.</p>
+          <p>
+            <strong>Passions</strong>: Football, Informatique, Mathématiques,
+            Philosophie, Sociologie.
+          </p>
+        </div>
+      </section>
+    </main>
 
-					</p>
-					<p>
-						J'ai travaillé pendant 1 an en tant que Data scientist dans une startup française MyDataModels (qui malheuresement a fermé ses portes) à Sophia Antipolis.
-						J'intervenais sur des problèmes d'analyse de données et développement de modèles prédictifs pour les clients de la startup.
-						J'ai également travaillé sur des projets de recherche pour l'amélioration d'un algorithme de machine learning créé par la startup.
-					</p>
-					<p>
-						Actuellement, je suis à la recherche de nouvelles opportunités dans la data (en France ou à l'étranger) en tant que Data Scientist, Data Engineer ou Data Analyst. Et je continue à travailler sur des projets personnels pour améliorer mes compétences.
-					</p>
-					<p>
-						Je suis également un fervent supporter du <a href="https://www.fcbarcelona.fr" target="_blank">FC Barcelone</a>.
-					</p>
-				</div>
-			</section>
-			<section>
-				<h2 class="section-title">Education</h2>
-				<div class="content">
-					<p>Diplôme d'ingénieur en Mathématiques Appliquées et Modélisation de Polytech'Nice-Sophia.</p>
-				</div>
-			</section>
-			<section>
-				<h2 class="section-title">Skills</h2>
-				<div class="content">
-					<p><strong>Programmation</strong>: Python, R, SQL, Java, Go.</p>
-					<p><strong>Analyse de données</strong>: Pandas, Polars, Numpy, Scipy, Matplotlib, Seaborn, Plotly.</p>
-					<p><strong>Data Engineering</strong>: Spark.</p>
-					<p><strong>Data Visualisation</strong>: Tableau.</p>
-					<p><strong>Machine Learning & Deep Learning</strong>: Scikit-learn, Tensorflow, Pytorch.</p>
-					<p><strong>Cloud Computing</strong>: GCP.</p>
-					<p><strong>Langues</strong>: Français, Anglais.</p>
-					<p><strong>Outils</strong>: Git, Docker, Gitlab CI/CD, Github Actions, Linux, VSCode, PyCharm.</p>
-					<p><strong>Maths</strong>: Algèbre linéaire, Analyse, Probabilités, Statistiques, Optimisation, Calcul différentiel et intégral.</p>
-					<p><strong>Soft Skills</strong>: Curiosité, Autonomie, Rigueur.</p>
-					<p><strong>Passions</strong>: Football, Informatique, Mathématiques, Philosophie, Sociologie.</p>
-
-				</div>
-			</section>
-		</main>
-
-		<ContactCTA />
-	</div>
+    <ContactCTA />
+  </div>
 </BaseLayout>
 
 <style>
-	.about {
-		display: flex;
-		flex-direction: column;
-		gap: 3.5rem;
-	}
+  .about {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+  }
 
-	img {
-		margin-top: 1.5rem;
-		border-radius: 1.5rem;
-		box-shadow: var(--shadow-md);
-	}
+  img {
+    margin-top: 1.5rem;
+    border-radius: 1.5rem;
+    box-shadow: var(--shadow-md);
+  }
 
-	section {
-		display: flex;
-		flex-direction: column;
-		gap: 0.5rem;
-		color: var(--gray-200);
-	}
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--gray-200);
+  }
 
-	.section-title {
-		grid-column-start: 1;
-		font-size: var(--text-xl);
-		color: var(--gray-0);
-	}
+  .section-title {
+    grid-column-start: 1;
+    font-size: var(--text-xl);
+    color: var(--gray-0);
+  }
 
-	.content {
-		grid-column: 2 / 4;
-	}
+  .content {
+    grid-column: 2 / 4;
+  }
 
-	.content :global(a) {
-		text-decoration: 1px solid underline transparent;
-		text-underline-offset: 0.25em;
-		transition: text-decoration-color var(--theme-transition);
-	}
+  .content :global(a) {
+    text-decoration: 1px solid underline transparent;
+    text-underline-offset: 0.25em;
+    transition: text-decoration-color var(--theme-transition);
+  }
 
-	.content :global(a:hover),
-	.content :global(a:focus) {
-		text-decoration-color: currentColor;
-	}
+  .content :global(a:hover),
+  .content :global(a:focus) {
+    text-decoration-color: currentColor;
+  }
 
-	@media (min-width: 50em) {
-		.about {
-			display: grid;
-			grid-template-columns: 1fr 60% 1fr;
-		}
+  @media (min-width: 50em) {
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 60% 1fr;
+    }
 
-		.about > :global(:first-child) {
-			grid-column-start: 2;
-		}
+    .about > :global(:first-child) {
+      grid-column-start: 2;
+    }
 
-		section {
-			display: contents;
-			font-size: var(--text-lg);
-		}
-	}
+    section {
+      display: contents;
+      font-size: var(--text-lg);
+    }
+  }
 </style>
